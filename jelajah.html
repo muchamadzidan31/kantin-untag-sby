@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1440">
+<title>Jelajah Kios - Kantin UNTAG</title>
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="jelajah">
+<div id="app-header"></div>
+<main>
+<div class="container">
+<div class="mt-5 mb-4"><h1>Jelajah kios kampus</h1><p class="sub mt-2">Ada rasa favorit di setiap sudut kantin. Temukan pilihanmu hari ini.</p></div>
+<div class="input-icon left mb-4"><i class="fa-solid fa-magnifying-glass"></i><input id="q" class="form-control search" placeholder="Cari makanan atau kios"></div>
+<div style="display:grid;grid-template-columns:232px 1fr;gap:22px;align-items:start">
+ <aside class="cardk filter"><div class="d-flex justify-content-between align-items-center"><h4>Filter</h4><button id="resetBtn" class="btn-link-k" style="font-size:12px">Atur ulang</button></div><div id="filters"></div></aside>
+ <section>
+  <div class="d-flex justify-content-between align-items-center mb-3"><b id="count" style="font-size:14px"></b>
+   <select id="sort" class="form-select" style="width:196px" aria-label="Urutkan"><option value="rek">Urutkan: Rekomendasi</option><option value="harga">Urutkan: Harga terendah</option><option value="abjad">Urutkan: Abjad A-Z</option></select></div>
+  <div id="chips" class="d-flex gap-2 mb-4"></div>
+  <div id="result"></div>
+ </section>
+</div>
+</div>
+</main>
+<div id="app-footer"></div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

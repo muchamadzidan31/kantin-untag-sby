@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1440">
+<title>Masuk - Kantin UNTAG</title>
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="login">
+<div id="app-header"></div>
+<main>
+<div class="container">
+<div class="login-wrap">
+ <section class="login-left">
+  <span class="tag">DARI KAMPUS, UNTUK KAMPUS</span>
+  <h2>Jeda kuliah,<br>isi energi lagi.</h2>
+  <p class="muted" style="max-width:420px">Temukan makanan favoritmu, pesan lebih nyaman, lalu ambil langsung di kantin kampus.</p>
+  <div class="imgs"><img src="assets/images/nasi-ayam-geprek.jpg" alt="Nasi ayam geprek" width="307" height="235"><img src="assets/images/es-teh-manis.jpg" alt="Es teh manis" width="162" height="195"></div>
+  <div><i class="fa-solid fa-store me-3 muted"></i><b style="font-size:14px;font-weight:500">Pilih kios · Pesan menu · Ambil sendiri</b></div>
+ </section>
+ <section class="login-right">
+  <h1>Selamat datang!</h1>
+  <p class="sub mb-4">Masuk dengan akun kampus untuk mulai memilih menu favoritmu.</p>
+  <form id="loginForm">
+   <label class="form-label" for="akun">Akun kampus</label>
+   <div class="input-icon mb-4"><input id="akun" class="form-control" placeholder="Masukkan akun kampus"><i class="fa-regular fa-user"></i></div>
+   <label class="form-label" for="pass">Kata sandi</label>
+   <div class="input-icon mb-4"><input id="pass" type="password" class="form-control" placeholder="Masukkan kata sandi"><button type="button" id="eye" class="btn p-0 border-0" style="position:absolute;right:16px;top:50%;transform:translateY(-50%);color:#77716e"><i class="fa-regular fa-eye"></i></button></div>
+   <div class="d-flex justify-content-between align-items-center mb-4"><label class="d-flex gap-2 align-items-center muted" style="font-size:14px"><input type="checkbox" class="form-check-input mt-0">Ingat saya</label><span class="small2">Ikon mata: tampilkan sandi</span></div>
+   <button class="btn btn-brand w-100 py-3">Masuk</button>
+  </form>
+  <div class="note mt-4"><i class="fa-solid fa-circle-info"></i><div><b>Ini adalah desain simulasi</b>Gunakan placeholder, bukan kredensial kampus asli. Tidak ada proses masuk atau penyimpanan data.</div></div>
+  <p class="small2 text-center mt-4">Untuk mahasiswa, dosen, dan staf UNTAG Surabaya.</p>
+ </section>
+</div>
+</div>
+</main>
+<div id="app-footer"></div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
